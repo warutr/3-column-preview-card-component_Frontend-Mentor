@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Lexend_Deca } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const lexendDeca = Lexend_Deca({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata: Metadata = {
   title: "3 column preview card component",
@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={lexendDeca.className}>
         <main className="flex flex-col justify-center items-center min-h-screen  bg-gray-100">
           {children}
         </main>

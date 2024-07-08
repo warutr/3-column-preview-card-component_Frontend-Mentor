@@ -1,3 +1,4 @@
+import { Big_Shoulders_Display } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -14,11 +15,11 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        primary: {
-          Bright_orange: "hsl(31, 77%, 52%)",
-          Dark_cyan: "hsl(184, 100%, 22%)",
-          Very_dark_cyan: "hsl(179, 100%, 13%)",
-        },
+          brightOrange: "hsl(31, 77%, 52%)",
+          darkCyan: "hsl(184, 100%, 22%)",
+          veryDarkCyan: "hsl(179, 100%, 13%)",
+          transparentWhite: 'hsl(var(--color-transparentWhite))',
+          veryLightGray: 'hsl(var(--color-veryLightGray))',
       },
     },
   },

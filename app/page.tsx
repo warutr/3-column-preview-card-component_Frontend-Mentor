@@ -1,56 +1,32 @@
 import React from "react";
-import { LuxuryIcon, SedansIcon, SuvsIcon } from "./component/svg";
+import sedansIcon from "@/public/images/icon-sedans.svg";
+import luxuryIcon from "@/public/images/icon-luxury.svg";
+import suvsIcon from "@/public/images/icon-suvs.svg";
+import CardSection from "./component/cardSection";
 
 const homePage = () => {
   return (
-    <div className="max-w-[440px] md:max-w-[1080px] mx-auto p-5">
-      <div className="grid grid-flow-row md:grid-cols-3 text-black">
-        <div className="px-5 py-10 bg-primary-Bright_orange text-white md:rounded-l-lg rounded-t-lg">
-          <div className="p-4">
-            <SedansIcon />
-          </div>
-          <div className="p-4">Sedans</div>
-          <div className="p-4">
-            Choose a sedan for its affordability and excellent fuel economy.
-            Ideal for cruising in the city or on your next road trip.
-          </div>
-          <div className="p-4">
-            <button className="bg-white text-primary-Bright_orange p-2 rounded-md">
-              Learn More
-            </button>
-          </div>
-        </div>
-        <div className="px-5 py-10 bg-primary-Dark_cyan text-white">
-          <div className="p-4">
-            <SuvsIcon />
-          </div>
-          <div className="p-4">SUVs</div>
-          <div className="p-4">
-            Take an SUV for its spacious interior, power, and versatility.
-            Perfect for your next family vacation and off-road adventures.
-          </div>
-          <div className="p-4">
-            <button className="text-primary-Dark_cyan bg-white p-2 rounded-md">
-              Learn More
-            </button>
-          </div>
-        </div>
-        <div className="px-5 py-10 bg-primary-Very_dark_cyan text-white md:rounded-r-lg rounded-b-lg">
-          <div className="p-4">
-            <LuxuryIcon />
-          </div>
-          <div className="p-4">Luxury</div>
-          <div className="p-4">
-            Cruise in the best car brands without the bloated prices. Enjoy the
-            enhanced comfort of a luxury rental and arrive in style.
-          </div>
-          <div className="p-4">
-            <button className="bg-white text-primary-Very_dark_cyan p-2 rounded-md">
-              Learn More
-            </button>
-          </div>
-        </div>
-      </div>
+    <div className="flex flex-col lg:flex-row justify-center rounded-lg overflow-hidden items-center h-auto lg:w-[57.5rem] max-w-[30rem] mx-3 sm:mx-8 lg:max-w-full lg:h-[31.25rem] my-12 lg:mt-[5.56rem]">
+      <CardSection
+        colors="brightOrange"
+        icon={sedansIcon}
+        title="Sedans"
+        description="Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+or on your next road trip."
+      />
+      <CardSection
+        colors="darkCyan"
+        icon={suvsIcon}
+        title="SUVs"
+        description="Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation"
+      />
+      <CardSection
+        colors="veryDarkCyan"
+        icon={luxuryIcon}
+        title="Luxury"
+        description="Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury"
+        className="bg-veryDarkCyan"
+      />
     </div>
   );
 };
@@ -95,5 +71,42 @@ Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
 
 - Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
 - Weights: 700
+
+import React from "react";
+import sedansIcon from "@/public/images/icon-sedans.svg";
+import luxuryIcon from "@/public/images/icon-luxury.svg";
+import suvsIcon from "@/public/images/icon-suvs.svg";
+import CardSection from "./component/cardSection";
+
+const homePage = () => {
+  return (
+    <div className="flex flex-col lg:flex-row justify-center rounded-lg  items-center h-auto lg:w-[57.5rem] max-w-[30rem] mx-3 sm:mx-8 lg:max-w-full lg:h-[31.25rem] my-12 lg:mt-[5.56rem]">
+      <CardSection
+        color="brightOrange"
+        icon={sedansIcon}
+        title="Sedans"
+        description="Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+or on your next road trip."
+        className="bg-brightOrange"
+      />
+      <CardSection
+        color="darkCyan"
+        icon={suvsIcon}
+        title="SUVs"
+        description="Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation"
+        className="bg-darkCyan"
+      />
+      <CardSection
+        color="veryDarkCyan"
+        icon={luxuryIcon}
+        title="Luxury"
+        description="Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury"
+        className="bg-veryDarkCyan"
+      />
+    </div>
+  );
+};
+
+export default homePage;
 
 */
