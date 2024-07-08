@@ -1,4 +1,4 @@
-import { Big_Shoulders_Display } from "next/font/google";
+
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -17,9 +17,7 @@ const config: Config = {
       colors: {
           brightOrange: "hsl(31, 77%, 52%)",
           darkCyan: "hsl(184, 100%, 22%)",
-          veryDarkCyan: "hsl(179, 100%, 13%)",
-          transparentWhite: 'hsl(var(--color-transparentWhite))',
-          veryLightGray: 'hsl(var(--color-veryLightGray))',
+          veryDarkCyan: "hsl(179, 100%, 13%)",  
       },
     },
   },

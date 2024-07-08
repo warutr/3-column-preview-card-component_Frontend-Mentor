@@ -23,17 +23,17 @@ const CardSection = ({
       <div>
         <Image src={icon} alt="" />
         <h1
-          className={`${bigShoulder.className} pt-[1.9rem] text-[2.4rem] uppercase text-white`}
+          className={`${bigShoulder.className} pt-8 text-[38px] uppercase text-white`}
         >
           {title}
         </h1>
-        <p className="ptext-[0.9rem] pt-[1.35rem] leading-[1.55rem] tracking-wide text-white">
+        <p className="text-[14.5px] pt-[21px] leading-[25px] tracking-wide text-white">
           {description}
         </p>
       </div>
       <div className="pt-6">
         <button
-          className={`bg-white hover:text-white text-${colors} hover:bg-${colors} rounded-3xl text-base border-2 mt-8 hover:cursor-pointer p-[12px] px-7 text-center duration-100 hover:border-transparent hover:shadow-md`}
+          className={`bg-white rounded-3xl text-base border-2 mt-8 p-[11px] px-7 text-center hover:text-white hover:text-${colors} hover:bg-white hover:bg-opacity-10 `}
         >
           Learn More
         </button>
